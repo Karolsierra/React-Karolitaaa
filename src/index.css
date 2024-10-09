@@ -499,6 +499,14 @@ button[type="submit"]:hover {
 
 
 
+.profesion-coordinacion{
+  width: calc(100% - 1rem); /* Asegúrate de que el ancho sea adecuado */
+  padding: 0.5rem;
+  margin-bottom: 1rem; /* Asegúrate de que el margen no cause desbordamiento */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 
 /*gestion usua*/
@@ -1207,23 +1215,31 @@ body {
 /*CALENDARIOUSUA*/
 /* Estilos para el contenedor del formulario */
 .form-container-calendariousua {
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 350px;
+  overflow-y: hidden; /* Oculta el scroll vertical */
+  overflow-x: hidden; /* Asegúrate de que no haya scroll horizontal */
+  height: auto; /* Permite que el contenedor se expanda según el contenido */
   padding: 20px;
-  /* Ajusta el padding según el diseño */
+  padding-bottom: 100px; /* Ajusta el padding según el diseño */
   border: 2px solid #5cb85c;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  /* Asegura que padding no afecte el tamaño total */
-  margin-top: 30vh;
-  /* Ajusta el margen superior según sea necesario */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  margin-top: 30vh; /* Ajusta el margen superior según sea necesario */
   margin-left: 65%;
-  transform: translateX(-160%);
-  /* Ajusta el margen izquierdo según sea necesario */
+  transform: translateX(-160%); /* Ajusta el margen izquierdo según sea necesario */
 }
+
+.form-container-calendariousua .input-calendariousua {
+  width: calc(100% - 1rem); /* Asegúrate de que el ancho sea adecuado */
+  padding: 0.5rem;
+  margin-bottom: 1rem; /* Asegúrate de que el margen no cause desbordamiento */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+   /* Asegura que el padding no afecte el tamaño total */
+}
+
 
 .form-container-calendariousua .Titulo-calendariousua {
   display: flex;
@@ -1238,13 +1254,6 @@ body {
   /* Mantiene los labels alineados a la izquierda */
 }
 
-.form-container-calendariousua .input-calendariousua {
-  width: calc(100% - 1rem);
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
 
 .form-container-calendariousua .boton-calendarioUsuario {
   padding: 0.5rem 1rem;
