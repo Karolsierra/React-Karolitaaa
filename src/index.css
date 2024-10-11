@@ -242,6 +242,11 @@
   }
 }
 
+
+
+
+
+
 /*GESTIONUSUARIOS - ADMIN*/
 /*usarios*/
 /* Estilo para el título */
@@ -1219,13 +1224,13 @@ body {
   overflow-x: hidden; /* Asegúrate de que no haya scroll horizontal */
   height: auto; /* Permite que el contenedor se expanda según el contenido */
   padding: 20px;
-  padding-bottom: 100px; /* Ajusta el padding según el diseño */
+  /*padding-bottom: 100px; /* Ajusta el padding según el diseño */
   border: 2px solid #5cb85c;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
-  margin-top: 30vh; /* Ajusta el margen superior según sea necesario */
+  margin-top: 20vh; /* Ajusta el margen superior según sea necesario */
   margin-left: 65%;
   transform: translateX(-160%); /* Ajusta el margen izquierdo según sea necesario */
 }
