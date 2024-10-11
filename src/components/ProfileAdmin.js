@@ -85,14 +85,23 @@ function ProfileAdmin() {
               <label className="label-form-profile-admin" htmlFor="clave">
                 Clave:
               </label>
-              <input
-                className="input-form-profile-admin"
-                type="password"
-                id="clave"
-                name="clave"
-                value={perfil.clave_Usua || ''}
-                readOnly
-              />
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <input
+                  className="input-form-profile-admin"
+                  type="password"
+                  id="clave"
+                  name="clave"
+                  value={perfil.clave_Usua || ''}
+                  readOnly
+                  style={{ flex: '1', marginRight: '10px' }} // Agregado para dar espacio al botón
+                />
+                <button
+                  className="btn-cambiar-clave"
+                  onClick={() => window.location.href = '/ruta-a-cambiar-clave'} // Cambia esto por la ruta de tu hoja de cambiar clave
+                >
+                  Cambiar clave
+                </button>
+              </div>
             </div>
             <div className="form-group-perfilAdmin">
               <label className="label-form-profile-admin" htmlFor="genero">

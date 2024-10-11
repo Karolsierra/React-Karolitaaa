@@ -1525,6 +1525,20 @@ body {
   /* Asegura que padding y border estén incluidos en el tamaño total */
 }
 
+.btn-cambiar-clave {
+  padding: 3px 8px; /* Espacio interior del botón */
+  background-color: #5cb85c; /* Color verde */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 3px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  font-size: 12px; /* Tamaño de la fuente más pequeño */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.btn-cambiar-clave:hover {
+  background-color: #4cae4c; /* Color más oscuro en hover */
+}
 /* Estilo del título */
 .section-title-profile-usua {
   text-align: center;
