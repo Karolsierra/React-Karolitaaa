@@ -243,7 +243,110 @@
 }
 
 
+/*CAMBIAR CLAVE*/
+/* Estilos generales (sin cambios) */
+.container-form-cambio-clave {
+  max-width: 400px;
+  margin: 0 auto; /* Alinea horizontalmente */
+  padding-top: 40px; /* Baja el contenedor para centrar verticalmente */
+}
 
+.caja-form {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo mejorado para el título "AVA" */
+.titulo-principal {
+  font-size: 3rem; /* Tamaño más grande */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4CAF50; /* Verde más vibrante */
+  letter-spacing: 5px; /* Espaciado entre letras */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  background: linear-gradient(90deg, #4CAF50, #66BB6A); /* Gradiente suave */
+  -webkit-background-clip: text; /* Para que el gradiente solo afecte el texto */
+  color: transparent; /* Hace el texto transparente para mostrar el gradiente */
+  transition: transform 0.3s ease; /* Efecto de transformación */
+}
+
+/* Efecto hover para dar movimiento */
+.titulo-principal:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilos del subtítulo y formulario (sin cambios) */
+.subtitulo-clave {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.text-clave {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.mensaje-texto {
+  color: green;
+  text-align: center;
+  margin: 1px 0; /* Espacio arriba y abajo */
+  /* Elimina max-height */
+  overflow: visible; /* Asegúrate de que el contenido sea visible */
+  font-size: 1rem; /* Asegura un tamaño de fuente adecuado */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label-clave {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-clave {
+  /*width: 100%;*/
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilo actualizado para el ícono de "ojo" centrado */
+.input-contenedor {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-eye {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.boton-cambiar-clave {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.boton-cambiar-clave:hover {
+  background-color: #45a049;
+}
 
 
 
