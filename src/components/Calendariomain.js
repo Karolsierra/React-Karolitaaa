@@ -155,6 +155,10 @@ function Calendariomain() {
 
   return (
     <main>
+      <div>
+      <p className="instrucciones-busqueda">Ingrese los datos necesarios para buscar el calendario.</p> 
+      </div>
+
       <div className="form-container-calendariousua">
         <h2 className="Titulo-calendariousua">Seleccione Ficha, Profesión y Coordinación</h2>
         <form id="selection-form" onSubmit={handleSubmit}>

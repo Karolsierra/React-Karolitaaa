@@ -23,70 +23,50 @@ function NavbarAdmin() {
               <Link
                 to="/perfilAdmin"
                 className="enlaceIcono-navadmin"
-                href="ProfileAdmin.html"
                 title="Perfil"
               >
-                <img
-                  src={perfil}
-                  alt="Perfil"
-                  className="icono"
-                />
+                <img src={perfil} alt="Perfil" className="icono" />
+                <span className="icono-text">Perfil</span>
               </Link>
             </li>
             <li className="li-navadmin">
               <Link
                 to="/CalendarioAdmin"
                 className="enlaceIcono-navadmin"
-                href="calendarioAdmin.html"
                 title="Ver calendario"
               >
-                <img
-                  src={calendario}
-                  alt="Calendario"
-                  className="icono"
-                />
+                <img src={calendario} alt="Calendario" className="icono" />
+                <span className="icono-text">Calendario</span>
               </Link>
             </li>
             <li className="li-navadmin">
               <Link
                 to="/informes"
                 className="enlaceIcono-navadmin"
-                href="InformesAdmin.html"
                 title="Informes"
               >
-                <img
-                  src={informes}
-                  alt="Informes"
-                  className="icono"
-                />
+                <img src={informes} alt="Informes" className="icono" />
+                <span className="icono-text">Informes</span>
               </Link>
             </li>
             <li className="li-navadmin">
               <Link
                 to="/programacionAdmin"
                 className="enlaceIcono-navadmin"
-                href="Programacion.html"
                 title="Programaciones"
               >
-                <img
-                  src={programaciones}
-                  alt="Programaciones"
-                  className="icono"
-                />
+                <img src={programaciones} alt="Programaciones" className="icono" />
+                <span className="icono-text">Programaciones</span>
               </Link>
             </li>
             <li className="li-navadmin">
               <Link
                 to="/usuarios"
                 className="enlaceIcono-navadmin"
-                href="usuariosAdmin.html"
                 title="Usuarios"
               >
-                <img
-                  src={usuarios}
-                  alt="Usuarios"
-                  className="icono"
-                />
+                <img src={usuarios} alt="Usuarios" className="icono" />
+                <span className="icono-text">Usuarios</span>
               </Link>
             </li>
           </ul>
@@ -95,11 +75,10 @@ function NavbarAdmin() {
           <Link
             to="/"
             className="cerrarSesion-navadmin" 
-            href="cerrar_sesion" 
             title="Cerrar sesión"
           >
             <img src={cerrar_sesion} className="icono" alt="cerrar-sesion"/>
-            Cerrar sesión
+            <span className="icono-text">Cerrar sesión</span>
           </Link>
         </div>
       </header>

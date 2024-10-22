@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Librería de íconos
 
 function CambiarClave() {
+  const [oldPassword, setOldPassword] = useState(''); // Nuevo estado para la contraseña anterior
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false); // Estado para controlar la visibilidad de la contraseña
+  const [showOldPassword, setShowOldPassword] = useState(false); // Estado para controlar la visibilidad de la contraseña anterior
+  const [showPassword, setShowPassword] = useState(false); // Estado para controlar la visibilidad de la nueva contraseña
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [message, setMessage] = useState('');
 
@@ -18,11 +20,16 @@ function CambiarClave() {
     }
 
     // Limpiar los campos de contraseña
+    setOldPassword('');
     setPassword('');
     setConfirmPassword('');
   };
 
-  // Alternar la visibilidad de la contraseña
+  // Alternar la visibilidad de las contraseñas
+  const toggleShowOldPassword = () => {
+    setShowOldPassword(!showOldPassword);
+  };
+
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
   };
@@ -34,11 +41,31 @@ function CambiarClave() {
   return (
     <div className="container-form-cambio-clave">
       <div className="caja-form">
-        <h1 className="titulo-principal">AVA</h1>
+        <h1 className="titulo-principal">SENA</h1>
         <p className="subtitulo-clave">Cambiar Contraseña</p>
-        <p className="text-clave">Por favor, ingrese su nueva contraseña y confírmela.</p>
+        <p className="text-clave">Por favor, ingrese su contraseña anterior y su nueva contraseña y confírmela.</p>
         <p id="message" className="mensaje-texto">{message}</p>
         <form id="passwordChangeForm" onSubmit={handleSubmit}>
+
+          {/* Campo de Contraseña Anterior */}
+          <div className="form-group">
+            <label className="label-clave" htmlFor="oldPassword">Contraseña Anterior</label>
+            <div className="input-contenedor">
+              <input
+                className="input-clave"
+                type={showOldPassword ? 'text' : 'password'} // Cambia entre 'text' y 'password'
+                id="oldPassword"
+                value={oldPassword}
+                onChange={(e) => setOldPassword(e.target.value)}
+                required
+              />
+              <span className="icon-eye" onClick={toggleShowOldPassword}>
+                {showOldPassword ? <FaEyeSlash /> : <FaEye />} {/* Ícono de ojo */}
+              </span>
+            </div>
+          </div>
+
+          {/* Campo de Nueva Contraseña */}
           <div className="form-group">
             <label className="label-clave" htmlFor="password">Nueva Contraseña</label>
             <div className="input-contenedor">
@@ -56,6 +83,7 @@ function CambiarClave() {
             </div>
           </div>
 
+          {/* Campo de Confirmar Contraseña */}
           <div className="form-group">
             <label className="label-clave" htmlFor="confirmPassword">Confirmar Contraseña</label>
             <div className="input-contenedor">

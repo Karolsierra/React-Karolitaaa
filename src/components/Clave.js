@@ -1,5 +1,4 @@
 import React from 'react';
-import  "../Styleclave.css";
 
 function Clave() {
   const handleSubmit = (event) => {
@@ -15,9 +14,9 @@ function Clave() {
   };
 
   return (
-    <div>
+    <div className="outer-container">
       <div className="password-reset-container">
-        <h1 className='Titulo-Principal' >AVA</h1>
+        <h1 className='Titulo-Principal' >SENA</h1>
         <p className="subtitle">¿Desea recuperar su contraseña?</p>
         <p className="instructions">
           Para recuperar su cuenta, escriba su correo electrónico institucional.
@@ -29,11 +28,11 @@ function Clave() {
     <input className='Texto-cuadro'
       type="email"
       id="email"
-      placeholder="Introduce tu nombre de usuario o correo electrónico"
+      placeholder="Correo Institucional"
       required
     />
     {/* Texto de ejemplo debajo del input */}
-    <p className="email-example">Ejemplo: usuario@soy.sena.edu.co o usuario@sena.edu.co</p>
+   
   </div>
   <button type="submit" className="btn-submit">
     Enviar Enlace de Restauración
